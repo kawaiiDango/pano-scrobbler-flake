@@ -6,8 +6,8 @@
   outputs =
     { self, nixpkgs }:
     let
-      tag = "439";
-      version = "4.39";
+      tag = "440";
+      version = "4.40";
       supportedSystems = [
         "x86_64-linux"
         "aarch64-linux"
@@ -21,8 +21,8 @@
 
       # Update these hashes using 'nix store prefetch-file <url>'
       hashes = {
-        "x86_64-linux" = "sha256-VhZVTvwpr7OndUN4UlpGkayMloHNOPQsCiQZKdzqGfs=";
-        "aarch64-linux" = "sha256-2FcjxItXlEP3QQi9vqdu85/1cBtS3y1D2rPcSKUWy6s=";
+        "x86_64-linux" = "sha256-ZVytPuicLwUDYH6XigLGRK6/CJanzufobnAB5/sz45s=";
+        "aarch64-linux" = "sha256-qNZNWjqM23+FWtiodAVK78QlapeXIjiQMZSiMzbL1cA=";
       };
     in
     {
