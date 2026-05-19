@@ -3,6 +3,7 @@
   lib,
   fetchurl,
   autoPatchelfHook,
+  makeWrapper,
   tag,
   version,
   arch,
@@ -10,6 +11,7 @@
 
   webkitgtk_6_0,
   libxtst,
+  glib-networking,
   ...
 }:
 
@@ -24,6 +26,7 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [
     autoPatchelfHook
+    makeWrapper
   ];
 
   # Runtime dependencies
@@ -44,7 +47,8 @@ stdenv.mkDerivation {
     cp *.so pano-scrobbler LICENSE $out/opt/pano-scrobbler
     cp lib/*.so $out/opt/pano-scrobbler/lib
     chmod +x $out/opt/pano-scrobbler/pano-scrobbler
-    ln -s $out/opt/pano-scrobbler/pano-scrobbler $out/bin/pano-scrobbler
+    makeWrapper $out/opt/pano-scrobbler/pano-scrobbler $out/bin/pano-scrobbler \
+      --prefix GIO_EXTRA_MODULES : "${glib-networking}/lib/gio/modules"
 
     substituteInPlace pano-scrobbler.desktop \
       --replace-fail "Exec=" "Exec=pano-scrobbler %U" \
