@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pano Scrobbler APT Repository</title>
+</head>
+
+<body>
+    <h1>Installation</h1>
+    <p>To install Pano Scrobbler on Debian/Ubuntu, run the following commands:</p>
+    <pre><code>
+curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x5CB896FA8DAF303AEB5FCE4DDB06725ACB6921A0" \
+  | gpg --dearmor \
+  | sudo tee /etc/apt/keyrings/kawaiiDango.gpg > /dev/null
+echo "deb [signed-by=/etc/apt/keyrings/kawaiiDango.gpg] https://kawaiidango.netlify.app/apt/pano-scrobbler all main" | sudo tee /etc/apt/sources.list.d/pano-scrobbler.list
+sudo apt update
+sudo apt install pano-scrobbler
+</code></pre>
+</body>
+
+</html>
