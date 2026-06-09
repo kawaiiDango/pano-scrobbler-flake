@@ -36,3 +36,7 @@ pano-scrobbler-flake.url = "github:kawaiiDango/pano-scrobbler-flake";
 # configuration.nix / nixosConfigurations:
 environment.systemPackages = [ inputs.pano-scrobbler-flake.packages.${system}.default ];
 ```
+
+---
+
+Despite its name, this repo also houses an apt repo metadata and a .spec file for COPR.
