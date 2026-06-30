@@ -1,0 +1,22 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: pano-scrobbler
+Label: pano-scrobbler
+Suite: all
+Codename: all
+Date: Tue, 30 Jun 2026 20:29:44 UTC
+Architectures: amd64 arm64
+Components: main
+Description: pano-scrobbler APT repository
+SHA256:
+ 745db46b52d8c3079863e75907e665580d18c2950e69492885c3d452b482cfde 625 main/binary-amd64/Packages
+ 49bce176c47f80efbceb9f3e6467d1ef84bec4d2bb7a54249e9c4131238164df 627 main/binary-arm64/Packages
+
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRcuJb6ja8wOutfzk3bBnJay2khoAUCakQnOQAKCRDbBnJay2kh
+oMuiAP4u5LRQfyoaopSQzXblC3RcFDhkL+HxPGdeFLjWKSLEigEArme9ITlw8q7W
+sZedMKfHrcf5wpZQ3rqR/8DiYKukKAk=
+=+wN9
+-----END PGP SIGNATURE-----
