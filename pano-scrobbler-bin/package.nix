@@ -42,7 +42,7 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out/{bin,opt/pano-scrobbler/lib,share/{applications,icons/hicolor/scalable/apps}}
+    mkdir -p $out/{bin,opt/pano-scrobbler/lib,share/{applications,icons/hicolor/{scalable,symbolic}/apps}}
 
     cp *.so pano-scrobbler LICENSE $out/opt/pano-scrobbler
     cp lib/*.so $out/opt/pano-scrobbler/lib
@@ -50,11 +50,9 @@ stdenv.mkDerivation {
     makeWrapper $out/opt/pano-scrobbler/pano-scrobbler $out/bin/pano-scrobbler \
       --prefix GIO_EXTRA_MODULES : "${glib-networking}/lib/gio/modules"
 
-    substituteInPlace pano-scrobbler.desktop \
-      --replace-fail "Exec=" "Exec=pano-scrobbler %U" \
-      --replace-fail "Icon=" "Icon=pano-scrobbler"
     cp pano-scrobbler.desktop $out/share/applications
-    cp pano-scrobbler.svg $out/share/icons/hicolor/scalable/apps/pano-scrobbler.svg
+    cp -R icons/hicolor/scalable $out/share/icons/hicolor/
+    cp -R icons/hicolor/symbolic $out/share/icons/hicolor/
 
     runHook postInstall
   '';

@@ -1,17 +1,17 @@
 Package: pano-scrobbler
-Version: 4.42
+Version: 4.44
 Architecture: arm64
 Maintainer: kawaiiDango <kawaiiDango@protonmail.com>
-Installed-Size: 176484
+Installed-Size: 160652
 Depends: dbus, libwebkitgtk-6.0-4
 Section: sound
 Priority: optional
 Homepage: https://github.com/kawaiiDango/pano-scrobbler
 Description: Feature packed cross-platform music tracker
 Filename: pool/main/p/pano-scrobbler/pano-scrobbler-linux-arm64.deb
-Size: 49920942
-SHA256: 1b4af5d31df4ad31ba5314a4c83500ed3239fe3a24125e28c76e04b029cbd586
-Filename: pool/main/p/pano-scrobbler/pano-scrobbler_4.42_arm64.deb
-Size: 49920942
-SHA256: 1b4af5d31df4ad31ba5314a4c83500ed3239fe3a24125e28c76e04b029cbd586
+Size: 49082520
+SHA256: 72af1d84376d68f977768934c698b746c97703bca1d86bca38716032c166343f
+Filename: pool/main/p/pano-scrobbler/pano-scrobbler_4.44_arm64.deb
+Size: 49082520
+SHA256: 72af1d84376d68f977768934c698b746c97703bca1d86bca38716032c166343f
 
