@@ -20,7 +20,7 @@ stdenv.mkDerivation {
   inherit version;
 
   src = fetchurl {
-    url = "https://github.com/kawaiiDango/pano-scrobbler/releases/download/${tag}/pano-scrobbler-linux-${arch}.tar.gz";
+    url = "https://github.com/kawaiiDango/pano-scrobbler/releases/download/${tag}/pano-scrobbler-linux-${arch}.tar.zst";
     inherit hash;
   };
 

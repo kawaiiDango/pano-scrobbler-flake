@@ -1,5 +1,5 @@
 %global _pkgname pano-scrobbler
-%global _pkgver 444
+%global _pkgver 445
 %global _pkgdir /opt/%{_pkgname}
 
 # Suppress debug package and stripping for prebuilt binaries
@@ -7,15 +7,15 @@
 %global __strip /bin/true
 
 Name:           pano-scrobbler
-Version:        4.44
+Version:        4.45
 Release:        1%{?dist}
 Summary:        Feature packed cross-platform music tracker
 License:        GPL-3.0-or-later
 URL:            https://github.com/kawaiiDango/pano-scrobbler
 ExclusiveArch:  x86_64 aarch64
 
-Source0:        %{url}/releases/download/%{_pkgver}/%{_pkgname}-linux-x64.tar.gz
-Source1:        %{url}/releases/download/%{_pkgver}/%{_pkgname}-linux-arm64.tar.gz
+Source0:        %{url}/releases/download/%{_pkgver}/%{_pkgname}-linux-x64.tar.zst
+Source1:        %{url}/releases/download/%{_pkgver}/%{_pkgname}-linux-arm64.tar.zst
 
 Requires:       dbus
 Requires:       webkitgtk6.0
@@ -71,5 +71,5 @@ fi
 %license LICENSE
 
 %changelog
-* Mon Sep 14 2026 kawaiiDango <kawaiiDango@protonmail.com> - 4.44-1
-- Update to 4.44
+* Fri Sep 18 2026 kawaiiDango <kawaiiDango@protonmail.com> - 4.45-1
+- Update to 4.45
