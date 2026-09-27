@@ -1,5 +1,5 @@
 %global _pkgname pano-scrobbler
-%global _pkgver 445
+%global _pkgver 446
 %global _pkgdir /opt/%{_pkgname}
 
 # Suppress debug package and stripping for prebuilt binaries
@@ -7,7 +7,7 @@
 %global __strip /bin/true
 
 Name:           pano-scrobbler
-Version:        4.45
+Version:        4.46
 Release:        1%{?dist}
 Summary:        Feature packed cross-platform music tracker
 License:        GPL-3.0-or-later
@@ -71,5 +71,5 @@ fi
 %license LICENSE
 
 %changelog
-* Fri Sep 18 2026 kawaiiDango <kawaiiDango@protonmail.com> - 4.45-1
-- Update to 4.45
+* Sun Sep 27 2026 kawaiiDango <kawaiiDango@protonmail.com> - 4.46-1
+- Update to 4.46
